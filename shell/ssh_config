@@ -1,6 +1,2 @@
 ServerAliveInterval 300
 StrictHostKeyChecking no
-IdentityFile "/Volumes/Imation USB/ssh/id_rsa"
-
-Host github.com
-  IdentityFile "/Volumes/Imation USB/ssh/github_rsa"
