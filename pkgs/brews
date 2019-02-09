@@ -23,7 +23,6 @@ packer
 autoconf
 automake
 zsh
-sslmate
 vips
 b2-tools
 dep
@@ -39,3 +38,5 @@ ipmiview
 pwgen
 cocoapods
 wireguard-tools
+hugo
+pixz
