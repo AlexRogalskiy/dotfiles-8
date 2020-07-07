@@ -10,7 +10,7 @@ function install_brew {
     return
   fi
 
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
   if ! type "brew" > /dev/null; then
     eerr "Brew failed to install"; exit 1
