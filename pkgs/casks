@@ -21,8 +21,6 @@ battle-net
 slack
 synergy
 steam
-playmemories-home
-vmware-remote-console
 transmit
 virtualbox
 minecraft
@@ -32,7 +30,6 @@ charles
 wireshark
 hex-fiend
 riot
-postman
 plexamp
 vagrant
 yubico-yubikey-personalization-gui
@@ -42,3 +39,11 @@ docker-edge
 mplayerx
 mullvadvpn
 kobo
+postico
+zoomus
+sonos
+nrlquaker-winbox
+league-of-legends
+insomnia-designer
+lens
+insomnia

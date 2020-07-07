@@ -12,7 +12,6 @@ pcre
 readline
 wget
 xz
-homebrew/dupes/grep
 gpg
 go
 bash
@@ -39,3 +38,10 @@ pwgen
 cocoapods
 hugo
 pixz
+golang-migrate
+doctl
+libffi
+terraform-inventory
+jq
+exiftool
+helm

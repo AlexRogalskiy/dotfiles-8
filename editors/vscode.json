@@ -20,13 +20,7 @@
         "files.trimTrailingWhitespace": false
     },
     "python.pythonPath": "~/.dotfiles/virtualenvs/venv/bin/python",
-    "go.useLanguageServer": true,
     "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.docsTool": "gogetdoc",
-    "go.enableCodeLens": {
-        "references": true,
-        "runtest": true
-    },
     "editor.multiCursorModifier": "alt",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -38,7 +32,32 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": true,
+    "liveshare.presence": false,
+    "go.useLanguageServer": true,
+    "go.testTags": "integration",
+    "go.vetFlags": [
+        "-vettool=/Users/david/go/bin/shadow"
+    ],
+    "go.vetOnSave": "package",
+    "[go]": {
+        "editor.links": false
+    },
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "external": true,
+        "args": [
+            "serve"
+        ]
+    },
+    "liveshare.featureSet": "insiders",
 }

@@ -59,7 +59,15 @@ $(_user_host)${_current_dir} $(git_prompt_info) $(virtualenv_prompt_info)
 # GPG
 export "GPG_TTY=$(tty)"
 export "SSH_AUTH_SOCK=${HOME}/.gnupg/S.gpg-agent.ssh"
-gpg-connect-agent /bye
+gpgconf --launch gpg-agent
 
 # Go
-export GO111MODULE=auto
+export GO111MODULE=on
+# Allow us to build libvips
+export CGO_CFLAGS_ALLOW="-Xpreprocessor"
+export PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig
+
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
+# TODO: Needed for go vet to work with pkg-config for libvips, why?
+export HOMEBREW_OPT=/usr/local/opt
