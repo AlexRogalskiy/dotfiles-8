@@ -5,6 +5,7 @@ alias fixvenv='find ~/.virtualenvs/venv/ -type l -delete; mkvirtualenv --python=
 alias flush='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias reload='exec $(which zsh) -l'
+alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 
 # Navigation
 alias ..="cd .."

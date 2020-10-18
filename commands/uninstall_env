@@ -31,13 +31,6 @@ function uninstall_env {
   einf "Unlinking gnupg"
   rm -f $HOME/.gnupg/gpg.conf
   rm -f $HOME/.gnupg/gpg-agent.conf
-
-  einf "Removing gopath"
-  rm -f $HOME/go/src/github.com/DMarby
-
-  einf "Removing ovftool"
-  rm -f /usr/local/bin/ovftool
-
   einf "Changing shell back to bash"
   chsh -s /bin/bash
 }

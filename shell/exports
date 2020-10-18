@@ -52,6 +52,11 @@ export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip
 # direnv
 eval "$(direnv hook zsh)"
 
+# Fix for antigen breaking variables
+typeset +H _current_dir="%{$fg_bold[blue]%}%3~%{$reset_color%} "
+typeset +H _return_status="%{$fg_bold[red]%}%(?..⍉)%{$reset_color%}"
+typeset +H _hist_no="%{$fg[grey]%}%h%{$reset_color%}"
+
 PROMPT='
 $(_user_host)${_current_dir} $(git_prompt_info) $(virtualenv_prompt_info)
 %{$fg[$CARETCOLOR]%}▶%{$resetcolor%} '

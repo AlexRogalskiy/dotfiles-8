@@ -26,6 +26,7 @@
 
 [core]
     editor = code --wait
+    excludesfile = ~/.gitignore
 
 [diff]
     tool = vscode-diff

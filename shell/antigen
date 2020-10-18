@@ -1,4 +1,4 @@
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 # Load antigen
 source $HOME/.vendor/zsh-antigen/antigen.zsh
@@ -34,7 +34,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Themes
-antigen theme robbyrussell/oh-my-zsh themes/avit
+antigen theme avit
 
 # Apply
 antigen apply
