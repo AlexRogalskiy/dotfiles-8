@@ -60,4 +60,8 @@
         ]
     },
     "liveshare.featureSet": "insiders",
+    "search.exclude": {
+        "**/vendor": true
+    },
+    "git.allowForcePush": true
 }
