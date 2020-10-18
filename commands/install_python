@@ -20,7 +20,7 @@ function install_python {
   pip3 install virtualenv
   pip3 install virtualenvwrapper
 
-  rm virtualenvs
+  rm -r virtualenvs
   mkdir virtualenvs
   ln -sF $DOTFILES/virtualenvs ~/.virtualenvs
 
